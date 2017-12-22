@@ -1,20 +1,28 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Pure JS Initiative</title>
+    </head>
+    <body>
+        <label for="name">Name</label>
+        <input type="text" id="name"/>
+        <label for="number">Number</label>
+        <input type="number" id="number"/>
+        <button type="button" onClick="addtoinit(document.getElementById('name').value, document.getElementById('number').value)">Add</button>
+        <button type="button" onClick="next()">Next</button>
+        <button type="button" onClick="sort()">Sort</button>
+        <hr>
 
-<label for="name">Name</label>
-<input type="text" id="name"/>
-<label for="number">Number</label>
-<input type="number" id="number"/>
-<button type="button" onClick="addtoinit(document.getElementById('name').value, document.getElementById('number').value)">Add</button>
-<button type="button" onClick="next()">Next</button>
-<button type="button" onClick="sort()">Sort</button>
-<hr>
+        <label for="current">Current Turn : </label>
+        <div id="current"></div>
+        <label for="ondeck">On Deck : </label>
+        <div id="ondeck"></div>
+        <hr>
+        <div>
+            <ol id="list"></ol>
+        </div>
 
-<label for="current">Current Turn : </label>
-<div id="current"></div>
-<label for="ondeck">On Deck : </label>
-<div id="ondeck"></div>
-<hr>
-<div>
-    <ol id="list"></ol>
-</div>
-
-<script src="/initiative/initiative.js"></script>
+        <script src="/initiative/initiative.js"></script>
+    </body>
+</html>
